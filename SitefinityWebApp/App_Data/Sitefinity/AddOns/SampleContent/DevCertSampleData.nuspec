@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>DevCertSampleData</id>
+    <version>1.0.0.0</version>
+    <title>DevCertSampleData</title>
+    <authors>system</authors>
+    <owners>system</owners>
+    <language>en-US</language>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>DevCertSampleData</description>
+    <references></references>
+  </metadata>
+  <files>
+    <file src="E:\approot\App_Data\Sitefinity\Export\DevCertSampleData\**\*.*" exclude="E:\approot\App_Data\Sitefinity\Export\DevCertSampleData\**\*.ps1" target="content\App_Data\Sitefinity\AddOns\DevCertSampleData" />
+    <file src="E:\approot\App_Data\Sitefinity\Export\DevCertSampleData\**\*.ps1" target="tools" />
+  </files>
+</package>

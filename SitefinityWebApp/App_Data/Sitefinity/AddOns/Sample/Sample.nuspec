@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Sample</id>
+    <version>1.0.0.0</version>
+    <title>Sample</title>
+    <authors>system</authors>
+    <owners>system</owners>
+    <language>en-US</language>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Sample</description>
+    <references></references>
+  </metadata>
+  <files>
+    <file src="E:\approot\App_Data\Sitefinity\Export\Sample\**\*.*" exclude="E:\approot\App_Data\Sitefinity\Export\Sample\**\*.ps1" target="content\App_Data\Sitefinity\AddOns\Sample" />
+    <file src="E:\approot\App_Data\Sitefinity\Export\Sample\**\*.ps1" target="tools" />
+  </files>
+</package>
