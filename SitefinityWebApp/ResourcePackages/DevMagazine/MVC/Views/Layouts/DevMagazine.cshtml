@@ -1,0 +1,34 @@
+﻿@* SitefinityWebApp\ResourcePackages\DevMagazine\Mvc\Views\Layouts\DevMagazine.cshtml *@
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@using Telerik.Sitefinity.Services;
+@using Telerik.Sitefinity.Modules.Pages;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta @Html.RenderLangAttribute() />
+    <title></title>
+    <link rel="stylesheet" href="~/ResourcePackages/DevMagazine/assets/dist/css/styles.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Html.Section("head")
+</head>
+<body>
+    @Html.Section("top")
+    <div class="navbar navbar-default js-nav-fixed">
+            @Html.SfPlaceHolder("Navigation")
+    </div>
+    <div class="Main-content section">
+        @Html.SfPlaceHolder("Main")
+    </div>
+    <footer>
+        @Html.SfPlaceHolder("Footer")
+    </footer>
+    @Html.Section("bottom")
+    @if (!SystemManager.IsDesignMode || SystemManager.IsPreviewMode)
+    {
+        @Html.Script(ScriptRef.JQuery, "bottom")
+    }
+
+    <script src="~/ResourcePackages/DevMagazine/assets/dist/js/all.min.js"></script>
+</body>
+</html>
